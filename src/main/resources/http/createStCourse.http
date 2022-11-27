@@ -1,0 +1,35 @@
+### save student course
+POST localhost:8080/studentCourse/create
+Content-Type: application/json
+
+{
+  "studentID": "1",
+  "courseID": "1",
+  "mark": "5"
+}
+### update student course
+
+PUT localhost:8080/studentCourse/update?id=5
+Content-Type: application/json
+
+{
+  "studentID": "1",
+  "courseID": "1",
+  "mark": "6"
+}
+###
+GET localhost:8080/studentCourse/get?id=2
+###
+GET localhost:8080/studentCourse/getDetail?id=1
+###
+DELETE localhost:8080/studentCourse/delete?id=1
+###
+GET localhost:8080/studentCourse/getAll
+###
+GET localhost:8080/studentCourse/get/Mark?date=2022-11-27&id=1
+###
+GET localhost:8080/studentCourse/get/between?date1=2022-11-26&date2=2022-11-28&id=1
+###
+GET localhost:8080/studentCourse/get/all/desc?id=1
+###
+GET localhost:8080/studentCourse/get/all/course?id=1&courseId=1

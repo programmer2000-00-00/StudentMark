@@ -1,0 +1,44 @@
+### create student
+POST localhost:8080/create
+Content-Type:application/json
+
+{
+  "name":"Gulom",
+  "surname":"Urolov",
+  "level":1,
+  "age":22,
+  "gender": "Male"
+}
+### getAll
+GET localhost:8080/get
+### getByiD
+GET localhost:8080/getByID/2;
+###
+PUT localhost:8080/updatedBystudent/3
+Content-Type:application/json
+
+{
+  "name":"Gulomjon",
+  "surname":"Urolov",
+  "level":2,
+  "age":23,
+  "gender": "Male"
+}
+### deleteByiD
+DELETE localhost:8080/deleteBystudent/1
+### getAllByName
+GET localhost:8080/getByName/yulchi
+###  getAllBySurName
+GET localhost:8080/getBySurname/Urolov
+###  getAllByLevel
+GET localhost:8080/getByLevel/1
+###
+GET localhost:8080/getByAge/22
+###
+GET localhost:8080/getByGender/Male
+### getAllByDate
+GET localhost:8080/getByDate/2022-11-21
+### get by created date between
+GET localhost:8080/getByDate/betweentysfcuAHSgi?from=2022-11-21&to=2022-11-23
+### get by page
+GET localhost:8080/getByPageGender?page=1&size=1&gender=Male

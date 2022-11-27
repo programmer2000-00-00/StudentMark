@@ -1,0 +1,46 @@
+
+### save course
+POST localhost:8080/createCourse
+Content-Type: application/json
+
+{
+  "name": "Web",
+  "price": "1000000.",
+  "duration": "365"
+}
+### getByiD
+GET localhost:8080/getCourseByID/1;
+### getAll
+GET localhost:8080/getCourseAll
+###
+PUT localhost:8080/updatedBycourse/1
+Content-Type:application/json
+
+{
+  "name":"C+",
+  "price":"200000",
+  "duration":360
+
+}
+### deleteByiD
+DELETE localhost:8080/deleteBycourse/2
+### getAllByName
+GET localhost:8080/getBycourseName/C#
+
+### getAllByPrice
+GET localhost:8080/getBycoursePrice/200000
+
+### getAllByDuration
+GET localhost:8080/getBycourseDuration/365
+### get by price  between
+GET localhost:8080/getByPriceBetween?from=20000&to=10000
+### get by created date between
+GET localhost:8080/getByCreatedDateBetweenCourse?from=2022-11-21&to=2022-11-25
+### get by page
+GET localhost:8080/getByPageCourse?page=0&size=2
+### get by Sort created date
+GET localhost:8080/getByPageCourseSort?page=1&size=1
+###
+GET localhost:8080/getByPageCourseSortPrice?page=1&size=1&price=200000
+### get by price between
+GET localhost:8080//Price/between?page=1&size=5&from=20000&to=10000001
